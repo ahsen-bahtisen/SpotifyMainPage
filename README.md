@@ -1,4 +1,5 @@
 # SpotifyMainPage
  IOS Bootcamp
 
-<img width="588" alt="Ekran Resmi 2022-10-12 17 59 34" src="https://user-images.githubusercontent.com/65489789/195380064-061ea491-4894-48c3-8188-16937f9abe23.png">
+
+<img width="588" alt="Ekran Resmi 2022-10-13 02 07 10" src="https://user-images.githubusercontent.com/65489789/195464200-19eb9c7d-68e6-4fa8-9f75-2bdc2062bc7a.png">
