@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KCs-4H-qXS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tff-jP-k79">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpotifyMainPage" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcU-0R-7By">
@@ -26,30 +27,30 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Müzik">
-                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="16"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkM-GY-6Xk">
-                                <rect key="frame" x="97" y="113" width="201" height="36"/>
+                                <rect key="frame" x="91" y="113" width="201" height="35"/>
                                 <color key="backgroundColor" red="0.1608105302" green="0.16470381619999999" blue="0.16470590230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="OwZ-IS-JE6"/>
+                                    <constraint firstAttribute="height" constant="35" id="OwZ-IS-JE6"/>
                                     <constraint firstAttribute="width" constant="201" id="sur-n4-7qo"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Podcast'ler ve Programlar">
-                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="16"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7ES-xe-pCD">
-                                <rect key="frame" x="0.0" y="170" width="414" height="692"/>
+                                <rect key="frame" x="0.0" y="169" width="414" height="644"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ubu-ML-r7q">
                                     <size key="itemSize" width="128" height="128"/>
@@ -83,15 +84,18 @@
                             <constraint firstItem="7ES-xe-pCD" firstAttribute="top" secondItem="DkM-GY-6Xk" secondAttribute="bottom" constant="21" id="VAP-Dp-awa"/>
                             <constraint firstItem="DkM-GY-6Xk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="Ze6-ds-lID"/>
                             <constraint firstItem="7ES-xe-pCD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="l6B-Og-BUa"/>
-                            <constraint firstItem="DkM-GY-6Xk" firstAttribute="leading" secondItem="RcU-0R-7By" secondAttribute="trailing" constant="15" id="lWN-Vm-FcS"/>
+                            <constraint firstItem="DkM-GY-6Xk" firstAttribute="leading" secondItem="RcU-0R-7By" secondAttribute="trailing" constant="9" id="lWN-Vm-FcS"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Anasayfa" image="house.fill" catalog="system" id="eGP-aM-sNN">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="İyi günler" id="mWt-4M-6Ou">
                         <rightBarButtonItems>
                             <barButtonItem title="Item" image="gearshape" catalog="system" id="7lq-pX-NHO">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </barButtonItem>
-                            <barButtonItem title="Item" image="timer" catalog="system" id="eEf-s2-PM4">
+                            <barButtonItem title="Item" image="clock.arrow.circlepath" catalog="system" id="eEf-s2-PM4">
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </barButtonItem>
                             <barButtonItem title="Item" image="bell" catalog="system" id="nKF-6O-cY1">
@@ -105,12 +109,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030.4347826086957" y="3.3482142857142856"/>
+            <point key="canvasLocation" x="1430" y="33"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="b83-kd-PjY">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KCs-4H-qXS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="mCG-iV-7Cb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Y92-B6-zHT">
                         <rect key="frame" x="0.0" y="48" width="414" height="44"/>
@@ -124,17 +129,100 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fwc-rb-sX5"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gDG-xM-Oey"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4k1-WS-jho" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.53846153846153" y="3.5545023696682461"/>
+            <point key="canvasLocation" x="530" y="33"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wtD-1I-VO7">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tff-jP-k79" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="APw-kO-msE"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" itemPositioning="centered" id="iDO-qj-8EW">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KCs-4H-qXS" kind="relationship" relationship="viewControllers" id="LKi-nU-g1o"/>
+                        <segue destination="39S-DZ-lis" kind="relationship" relationship="viewControllers" id="IfY-DS-rcT"/>
+                        <segue destination="I6S-cg-ep9" kind="relationship" relationship="viewControllers" id="aaa-dd-HgS"/>
+                        <segue destination="hEZ-BN-uSh" kind="relationship" relationship="viewControllers" id="E8H-nM-avw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pyr-8E-xbG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-370" y="33"/>
+        </scene>
+        <!--Arama-->
+        <scene sceneID="C8G-L4-PMS">
+            <objects>
+                <viewController id="39S-DZ-lis" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dgZ-Iq-vFm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XFH-wi-5X1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Arama" image="magnifyingglass" catalog="system" id="VCn-qa-aTN">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IrM-BJ-MtX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1126" y="832"/>
+        </scene>
+        <!--Kitaplığın-->
+        <scene sceneID="Ej1-4C-4mI">
+            <objects>
+                <viewController id="I6S-cg-ep9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AgE-bu-d2W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4W1-rR-9GI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Kitaplığın" image="square.stack.3d.down.right" catalog="system" id="wDk-w4-qJX">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SkU-fk-xNZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-365" y="832"/>
+        </scene>
+        <!--Premium-->
+        <scene sceneID="NmO-yP-9Ia">
+            <objects>
+                <viewController id="hEZ-BN-uSh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IF9-qe-0E3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uZE-ts-Xex"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Premium" image="line.3.horizontal.decrease.circle.fill" catalog="system" id="SRn-QM-nBo">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ypg-BT-bhn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="384" y="832"/>
         </scene>
     </scenes>
     <resources>
         <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="clock.arrow.circlepath" catalog="system" width="128" height="112"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
-        <image name="timer" catalog="system" width="128" height="123"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="line.3.horizontal.decrease.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="square.stack.3d.down.right" catalog="system" width="123" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

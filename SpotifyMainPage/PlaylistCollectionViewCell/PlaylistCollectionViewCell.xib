@@ -39,10 +39,12 @@
                             <constraint firstItem="a7h-sJ-QYO" firstAttribute="top" secondItem="mw6-NX-YdV" secondAttribute="top" id="hVg-cS-tS2"/>
                             <constraint firstItem="a7h-sJ-QYO" firstAttribute="leading" secondItem="mw6-NX-YdV" secondAttribute="leading" id="i5Z-8r-HHo"/>
                             <constraint firstItem="a7h-sJ-QYO" firstAttribute="leading" secondItem="mw6-NX-YdV" secondAttribute="leading" id="la9-Vn-UWh"/>
-                            <constraint firstItem="a7h-sJ-QYO" firstAttribute="leading" secondItem="mw6-NX-YdV" secondAttribute="leading" constant="20" symbolic="YES" id="sM8-6Z-vJk"/>
                             <constraint firstItem="a7h-sJ-QYO" firstAttribute="centerY" secondItem="mw6-NX-YdV" secondAttribute="centerY" id="sgh-Kk-Xia"/>
                             <constraint firstAttribute="bottom" secondItem="a7h-sJ-QYO" secondAttribute="bottom" id="z7U-U5-YvQ"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>
