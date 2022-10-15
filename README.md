@@ -2,4 +2,4 @@
  IOS Bootcamp
 
 
-<img width="588" alt="Ekran Resmi 2022-10-13 02 07 10" src="https://user-images.githubusercontent.com/65489789/195464200-19eb9c7d-68e6-4fa8-9f75-2bdc2062bc7a.png">
+<img width="588" alt="Ekran Resmi 2022-10-15 16 32 03" src="https://user-images.githubusercontent.com/65489789/195989168-ebc9a042-23c9-4f80-9b27-b957abb5560e.png">
